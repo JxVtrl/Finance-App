@@ -31,6 +31,7 @@ h2{
     margin-bottom: 0.8rem;
     color: var(--dark-blue);
 
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -44,7 +45,6 @@ header{
 #header-title{
     color: #fff;
     font-weight: 200;
-    
 }
 
 /* Balance ================= */
@@ -84,12 +84,58 @@ header{
 }
 
 /* Table ================= */
-.data-table{
-    
+
+#data-table{
+    width: 100%;
+    border-spacing: 0 0.25rem;
+    color: #969cb3;
 }
 
+table thead tr:first-child, 
+table tbody td:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead th{
+    background: #fff;
+    
+    font-weight: normal;
+    padding: 1rem 2rem;
+
+    text-align: left;
+}
+
+table tbody tr{
+    opacity: 0.7;
+
+    cursor: pointer;
+}
+
+table tbody tr:hover{
+    opacity: 1;
+}
+
+table tbody td{
+    background: #fff;
+    padding: 1rem 2rem;
+
+}
+
+td.description{
+    color: var(--dark-blue);
+}
+
+td.income{
+    color: #12a454;
+}
+
+td.expense{
+    color: #e92929;
+}
 
 /* Footer ================= */
 footer{
     text-align: center;
+
+    margin-top: 2rem;
 }
